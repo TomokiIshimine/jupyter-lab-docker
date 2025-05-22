@@ -1,0 +1,10 @@
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8889:8888"
+    volumes:
+      - ./work:/home/jovyan/work
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"        # Lab UI を既定に
+    command: start-notebook.py --NotebookApp.token='my-token'
