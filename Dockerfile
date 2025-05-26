@@ -1,19 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM quay.io/jupyter/base-notebook:x86_64-lab-4.1.5
 
-##############################################################################
-# 1) 日本語フォントをインストール
-# 2) フォントキャッシュを更新
-# 3) matplotlibrc を専用ディレクトリに置き、そこを最優先に読むよう
-#    MPLCONFIGDIR を指定
-##############################################################################
 USER root
-
-# 日本語フォント（念のため残す）
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends fonts-noto-cjk fontconfig && \
-    fc-cache -f -v && \
-    rm -rf /var/lib/apt/lists/*
 
 ##############################################################################
 # 必須のPython パッケージ類
