@@ -22,15 +22,28 @@
 ## 起動方法
 
 1.  **Docker および Docker Compose がインストールされていることを確認してください。**
-2.  **このリポジトリをクローンまたはダウンロードします。**
-3.  **ターミナルでプロジェクトのルートディレクトリに移動し、以下のコマンドを実行します。**
+
+2.  **GitHubリポジトリをクローンします。**
+
+    ```bash
+    git clone https://github.com/TomokiIshimine/jupyter-lab-docker.git
+    ```
+
+3.  **プロジェクトディレクトリに移動します。**
+
+    ```bash
+    cd jupyter-lab-docker
+    ```
+
+4.  **Docker Compose を使用してJupyterLabを起動します。**
 
     ```bash
     docker-compose up -d
     ```
 
-4.  **ブラウザで `http://localhost:8888` を開きます。**
-5.  **トークンを求められた場合は、`my-token` を入力してください。**
+5.  **ブラウザで `http://localhost:8888` を開きます。**
+
+6.  **トークンを求められた場合は、`my-token` を入力してください。**
 
 ## Claude Desktop との連携設定
 

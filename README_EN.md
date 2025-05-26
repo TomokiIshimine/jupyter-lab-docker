@@ -22,15 +22,28 @@ Using `docker-compose.yml` and `Dockerfile`, this project launches a JupyterLab 
 ## Getting Started
 
 1.  **Ensure Docker and Docker Compose are installed.**
-2.  **Clone or download this repository.**
-3.  **Navigate to the project root directory in terminal and run the following command:**
+
+2.  **Clone the GitHub repository.**
+
+    ```bash
+    git clone https://github.com/TomokiIshimine/jupyter-lab-docker.git
+    ```
+
+3.  **Navigate to the project directory.**
+
+    ```bash
+    cd jupyter-lab-docker
+    ```
+
+4.  **Start JupyterLab using Docker Compose.**
 
     ```bash
     docker-compose up -d
     ```
 
-4.  **Open `http://localhost:8888` in your browser.**
-5.  **If prompted for a token, enter `my-token`.**
+5.  **Open `http://localhost:8888` in your browser.**
+
+6.  **If prompted for a token, enter `my-token`.**
 
 ## Claude Desktop Integration Setup
 
