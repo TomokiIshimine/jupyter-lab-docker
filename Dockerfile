@@ -9,8 +9,8 @@ USER root
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt && \
     pip install --no-cache-dir \
-    "jupyter-server-ydoc>=0.9" \
-    "jupyter-collaboration>=4.0" && \
+    "jupyter-server-ydoc==2.0.2" \
+    "jupyter-collaboration==4.0.1" && \
     jupyter server extension enable jupyter_collaboration
 
 # 非 root で実行
